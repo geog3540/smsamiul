@@ -1,2 +1,2 @@
 # smsamiul
-geog3540/smsamiul - Samiul Islam
+GEOG 5540: Geovisualization Portfolio Repository
