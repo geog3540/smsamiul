@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Flow Map Assignment</title>
+	<title>Flow Map</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style.css">
@@ -66,16 +66,22 @@
 			color: #005ea2;
 			text-decoration: underline;
 		}
+		#Map-description {
+			background-color: #f1f1f1;
+			padding: 2rem;
+			margin: 0 auto;
+			max-width: 800px;
+		}
 	</style>
 </head>
 <body>
 	<header>
-		<h1>Flow Map Assignment</h1>
+		<h1>Flow Map</h1>
 		<nav>
 			<ul>
 				<li><a href="index.html">Home</a></li>
 				<li><a href="#flow-map">Flow Map</a></li>
-				<li><a href="#writing">Writing</a></li>
+				<li><a href="#Map description">Interpretation of Flow Patterns</a></li>
 				<li><a href="https://iowa-my.sharepoint.com/personal/smsamislam_uiowa_edu/_layouts/15/download.aspx?UniqueId=73845e95f5c74c578f98585415380c27&e=gOnhZf" target="_blank">Flow Map Project File</a></li>
 			</ul>
 		</nav>
@@ -83,22 +89,27 @@
 
 	<section id="flow-map">
 		<h2>Flow Map</h2>
-		<img src="FlowMap.jpg" alt="Flow Map" width="70%" height="70%">
+		<img src="FlowMap.jpg" alt="Flow Map" width="80%" height="80%">
 	</section>
 
-	<section id="writing">
-		<h2>Writing</h2>
-		<p>1. What is the purpose of your flow map?</p>
-		<p>Your answer here.</p>
+	<section id="Map description">
+		<h2>1. Interpretation of flow patterns</h2>
+		<h3>1.1 Flows using curve half arrows:</h3>
+		<p>In creating my flow map, I used curves with half arrows. This choice was made to reduce the overlapping of flow lines at the origin and destination locations by tapering the flow lines to thin points at the extremities. The curved lines' symmetric nature helped enhance readability, particularly in two-way flow maps that depict phenomena like migration, where people move from one place to another.
+For the migration of total flows, I used proportional classification to assign thickness to the arrows proportional to the values of volumes. This approach allows the map to maintain a realistic portrayal of the actual migration scenario from state to state. To avoid any conflicts between the colors used for the choropleth and the nodes, I carefully selected a color scheme that is colorblind safe and provides good contrast.
+In using my chosen color scheme (Red-Yellow-Blue), I found that it helped to highlight significant flows, particularly the high flow volumes for Missouri, without the need to reference the legend constantly.  
+</p>
 
-		<p>2. What data did you use to create your flow map?</p>
-		<p>Your answer here.</p>
+		<h3>1.2 Description of the Nodes:</h3>
+		<p>In creating my node map, I employed a total flow analysis between 1789 to 1924. This allowed me to highlight the relationship between in-flow migrant families based on their entire migration during that period. To achieve this, I utilized quantile classification to classify the total flows. This approach allowed me to focus on the highest (top 25%) and lowest (least 25%) states with total migration and correlate them with the same classes with in-flow values.
+To ensure that my color scheme did not hinder the readers' ability to interpret the map, I opted for a "black" color scheme that conveyed the intensity of the total flows. I sued a proportional color symbol with only three classifications to make it easy to understand. By doing so, I created a clear and visually appealing map that effectively conveyed the migration patterns during the specified period.
+</p>
 
-		<p>3. How did you decide on the design of your flow map?</p>
-		<p>Your answer here.</p>
-
-		<p>4. What insights or patterns can be seen in your flow map?</p>
-		<p>Your answer here.</p>
+		<h3>1.3 Regions using choropleth map:</h3>
+		<p>I utilized a choropleth region mapping to display the in-flows of migrant families. The visualization scheme used the "green" to represent states with high in-flow, whereas the "pink" represent states with the least in-flow. I used a natural break classification system where the "negative" values are represented mainly by the "pink" color, and "positive" values are in different shades of "green" color. This enabled unambiguous identification of the states that were most popular among migrants. 
+In terms of spatial patterns, the map revealed intriguing insights. Texas had the highest flow, with many migrants moving to and from Oklahoma and surrounding states. In contrast, many eastern and western states displayed low send flow, and the midwestern and southern states appeared more active in migration. This pattern was also evident in the inflows, with the midwestern and southern states displaying maximum inflows. The map also depicts these states in blue, indicating a high total migration flow in these areas. The flow mapping visualization I created successfully illustrates the logical connection between migration flow, total flow, and inflow, making it easier to understand migration dynamics.
+</p>
+		 
 	</section>
 </body>
 </html>
