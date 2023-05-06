@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flow Map</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+		body {
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		header {
+			background-color: #0077c2;
+			color: #fff;
+			padding: 1rem;
+			text-align: center;
+		}
+		h1 {
+			margin: 0;
+		}
+		nav ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			justify-content: center;
+		}
+		nav li {
+			margin: 0 1rem;
+		}
+		nav a {
+			color: #fff;
+			text-decoration: none;
+		}
+		nav a:hover {
+			text-decoration: underline;
+		}
+		h2 {
+			margin-top: 2rem;
+			margin-bottom: 1rem;
+		}
+		section {
+			padding: 2rem;
+			margin: 0 auto;
+			max-width: 800px;
+		}
+		img {
+			display: block;
+			margin: 0 auto;
+			max-width: 100%;
+			height: auto;
+		}
+		p {
+			line-height: 1.5;
+			margin-top: 1rem;
+			margin-bottom: 1rem;
+			text-align: justify;
+			text-justify: inter-word;
+		}
+		a {
+			color: #0077c2;
+		}
+		a:hover {
+			color: #005ea2;
+			text-decoration: underline;
+		}
+		#Map-description {
+			background-color: #f1f1f1;
+			padding: 2rem;
+			margin: 0 auto;
+			max-width: 800px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Flow Map</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#flow-map">Flow Map</a></li>
+				<li><a href="#Map description">Interpretation of Flow Patterns</a></li>
+				<li><a href="https://iowa-my.sharepoint.com/personal/smsamislam_uiowa_edu/_layouts/15/download.aspx?UniqueId=73845e95f5c74c578f98585415380c27&e=gOnhZf" target="_blank">Flow Map Project File</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<section id="flow-map">
+		<h2>Flow Map</h2>
+		<img src="assets/imgs/FlowMap.jpg" alt="Flow Map" width="80%" height="80%">
+	</section>
+
+	<section id="Map description">
+		<h2>1. Interpretation of flow patterns</h2>
+		<h3>1.1 Flows using curve half arrows:</h3>
+		<p>In creating my flow map, I used curves with half arrows. This choice was made to reduce the overlapping of flow lines at the origin and destination locations by tapering the flow lines to thin points at the extremities. The curved lines' symmetric nature helped enhance readability, particularly in two-way flow maps that depict phenomena like migration, where people move from one place to another.
+For the migration of total flows, I used proportional classification to assign thickness to the arrows proportional to the values of volumes. This approach allows the map to maintain a realistic portrayal of the actual migration scenario from state to state. To avoid any conflicts between the colors used for the choropleth and the nodes, I carefully selected a color scheme that is colorblind safe and provides good contrast.
+In using my chosen color scheme (Red-Yellow-Blue), I found that it helped to highlight significant flows, particularly the high flow volumes for Missouri, without the need to reference the legend constantly.  
+</p>
+
+		<h3>1.2 Description of the Nodes:</h3>
+		<p>In creating my node map, I employed a total flow analysis between 1789 to 1924. This allowed me to highlight the relationship between in-flow migrant families based on their entire migration during that period. To achieve this, I utilized quantile classification to classify the total flows. This approach allowed me to focus on the highest (top 25%) and lowest (least 25%) states with total migration and correlate them with the same classes with in-flow values.
+To ensure that my color scheme did not hinder the readers' ability to interpret the map, I opted for a "black" color scheme that conveyed the intensity of the total flows. I sued a proportional color symbol with only three classifications to make it easy to understand. By doing so, I created a clear and visually appealing map that effectively conveyed the migration patterns during the specified period.
+</p>
+
+		<h3>1.3 Regions using choropleth map:</h3>
+		<p>I utilized a choropleth region mapping to display the in-flows of migrant families. The visualization scheme used the "green" to represent states with high in-flow, whereas the "pink" represent states with the least in-flow. I used a natural break classification system where the "negative" values are represented mainly by the "pink" color, and "positive" values are in different shades of "green" color. This enabled unambiguous identification of the states that were most popular among migrants. 
+In terms of spatial patterns, the map revealed intriguing insights. Texas had the highest flow, with many migrants moving to and from Oklahoma and surrounding states. In contrast, many eastern and western states displayed low send flow, and the midwestern and southern states appeared more active in migration. This pattern was also evident in the inflows, with the midwestern and southern states displaying maximum inflows. The map also depicts these states in blue, indicating a high total migration flow in these areas. The flow mapping visualization I created successfully illustrates the logical connection between migration flow, total flow, and inflow, making it easier to understand migration dynamics.
+</p>
+		 
+	</section>
+</body>
+</html>
